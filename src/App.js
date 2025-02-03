@@ -62,6 +62,16 @@ function App() {
         </motion.div>
       </div>
                <LineGradient />
+            <div className="container m-auto">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("projects")}
+        >
+          <Projects />
+        </motion.div>
+      </div>
+      <LineGradient />
           </div>
 
   );
