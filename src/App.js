@@ -61,8 +61,9 @@ function App() {
           <MySkills />
         </motion.div>
       </div>
+               <LineGradient />
           </div>
-   <LineGradient />
+
   );
 }
 
