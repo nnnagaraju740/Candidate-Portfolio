@@ -42,7 +42,7 @@ const Contact = () => {
       </motion.div>
 
       {/* FORM & IMAGE */}
-      <div className="md:flex md:justify-between gap-16 mt-5">
+      <div className="md:flex md:justify-between lg:gap-16 mt-5 gap-10 desktop_mode_lg_mobile">
         <motion.div
           initial="hidden"
           whileInView="visible"
