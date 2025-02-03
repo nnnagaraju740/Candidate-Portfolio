@@ -16,12 +16,15 @@ html, body {
   overflow-x: hidden;
   width: 100vw;
 }
-@supports (-webkit-touch-callout: none) and (not (hover: hover)) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
     body {
-        width: 1000px !important; /* Force desktop width */
+        /*width: 1200px !important;*/ /* Force desktop width */
         transform: scale(1) !important;
-        overflow-x: auto !important;
+        overflow-x: hidden !important;
     }
+    .desktop_mode_lg_mobile{
+    display: flex;
+  }
 }
 
 @media (max-width: 1024px) {
