@@ -51,7 +51,18 @@ function App() {
           <Landing setSelectedPage={setSelectedPage} />
         </motion.div>
       </div>
+             <LineGradient />
+      <div className="container m-auto h-auto ">
+        <motion.div
+          margin="0 0 -200px 0"
+          amount="all"
+          onViewportEnter={() => setSelectedPage("skills")}
+        >
+          <MySkills />
+        </motion.div>
+      </div>
           </div>
+   <LineGradient />
   );
 }
 
