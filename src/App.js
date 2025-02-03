@@ -101,6 +101,7 @@ function App() {
           <Contact />
         </motion.div>
       </div>
+            <Footer />
           </div>
 
   );
