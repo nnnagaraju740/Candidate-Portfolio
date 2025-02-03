@@ -30,13 +30,13 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-deep-blue">
+   <div className="app bg-deep-blue">
       <Navbar
         isTopOfPage={isTopOfPage}
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto ">
+      <div className="container m-auto">
         {isDesktop && (
           <DotGroup
             selectedPage={selectedPage}
@@ -52,7 +52,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto h-auto ">
+      <div className="container m-auto h-auto ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -62,7 +62,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto h-auto ">
+      <div className="container m-auto ">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -72,7 +72,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="container m-auto">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -82,7 +82,7 @@ function App() {
         </motion.div>
       </div>
       <LineGradient />
-      <div className="w-5/6 mx-auto">
+      <div className="container m-auto">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
@@ -102,7 +102,7 @@ function App() {
         </motion.div>
       </div> */}
       <LineGradient />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="container m-auto">
         <motion.div
           margin="0 0 -200px 0"
           amount="all"
