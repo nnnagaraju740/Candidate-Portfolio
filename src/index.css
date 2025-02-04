@@ -25,12 +25,6 @@ body {
 /* .desktop_mode_lg_mobile{
     display: flex;
   }*/
-@media (max-width: 767px) { 
-  .desktop_mode_lg_mobile {
-    display: flex !important; /* Force flex on iOS */
-    width: 100%; /* Ensure full width */
-  }
-}
 
 /*@media (max-width: 1024px) {
   .desktop_mode_lg_mobile{
