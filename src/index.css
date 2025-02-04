@@ -16,14 +16,6 @@ html, body {
   overflow-x: hidden;
   width: 100vw;
 }
-@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
-  .desktop_mode_lg_mobile {
-    display: flex !important;
-    width: 1200px !important; 
-    overflow-x: hidden !important;
-  }
-}
-
 @media (max-width: 1024px) {
   .desktop_mode_lg_mobile{
     display: flex;
@@ -34,3 +26,14 @@ html, body {
     display: inherit
   }
  }
+/* Force Desktop Mode on iPhones */
+@supports (-webkit-touch-callout: none) and (not (hover: hover)) {
+  .desktop_mode_lg_mobile {
+    display: flex !important;  /* Ensure desktop view */
+  }
+   @media (max-width: 767px) {
+    .desktop_mode_lg_mobile {
+      display: inherit !important; /* Ensure correct styling on iPhones */
+    }
+  }
+}
