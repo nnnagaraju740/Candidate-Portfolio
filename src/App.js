@@ -27,6 +27,12 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+     if (navigator.userAgent.includes("iPhone") || navigator.userAgent.includes("iPad")) {
+    document.querySelector("meta[name=viewport]").setAttribute(
+      "content",
+      "width=1280px, initial-scale=1.0"
+    );
+  }
   }, []);
 
   return (
