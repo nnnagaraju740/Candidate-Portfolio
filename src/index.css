@@ -16,10 +16,11 @@ html, body {
   overflow-x: hidden;
   width: 100vw;
 }
-/* Force Desktop Mode on iPhones */
-@supports (-webkit-touch-callout: none) and (not (hover: hover)) {
+@media screen and (-webkit-min-device-pixel-ratio: 0) and (max-width: 1024px) {
   .desktop_mode_lg_mobile {
-    display: flex !important;  /* Ensure desktop view */
+    display: flex !important;
+    width: 1200px !important; 
+    overflow-x: hidden !important;
   }
 }
 
