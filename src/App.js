@@ -27,10 +27,6 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-  document.addEventListener("gesturestart", function (e) {
-  e.preventDefault();
-});
-
   }, []);
 
   return (
