@@ -31,6 +31,11 @@ html, body {
   .desktop_mode_lg_mobile {
     display: flex !important;  /* Ensure desktop view */
   }
+  @media (max-width: 1024px) {
+  .desktop_mode_lg_mobile{
+    display: flex;
+  }
+}
    @media (max-width: 767px) {
     .desktop_mode_lg_mobile {
       display: inherit !important; /* Ensure correct styling on iPhones */
