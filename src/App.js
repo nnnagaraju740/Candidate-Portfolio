@@ -27,12 +27,10 @@ function App() {
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
-    if (navigator.userAgent.includes("iPhone") && navigator.userAgent.includes("CriOS")) {
-      const element = document.querySelector(".desktop_mode_lg_mobile");
-      if (element) {
-        element.style.display = "inherit";
-      }
-    }
+  document.addEventListener("gesturestart", function (e) {
+  e.preventDefault();
+});
+
   }, []);
 
   return (
